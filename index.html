@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet'
+    integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+  <link rel="stylesheet" href="style.css">
+  <title>Warehouse Manager</title>
+</head>
+
+<body>
+  <header>
+    <div class="row">
+      <div class="col">
+        <h1>Package Information</h1>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="row mt-3">
+      <div class="col d-flex justify-content-around">
+        <button class="btn btn-outline-success" onclick="filterHeavy()">Heavy</button>
+        <button class="btn btn-outline-success" onclick="filterPriority()">Priority</button>
+        <button class="btn btn-outline-success" onclick="filterFragile()">Fragile</button>
+        <button class="btn btn-outline-success" onclick="filterRecipient('Brittany')">Recipient</button>
+        <button class="btn btn-outline-success" onclick="filterTrackingNumber('suz2367')">Tracking Number</button>
+        <button class="btn btn-outline-success" onclick="reset()">Reset</button>
+      </div>
+    </div>
+
+
+
+    <div class="row" id="cards">
+      <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-around mt-2">
+        <div class="card p-2" style="width: 18rem;">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Heavy: </li>
+            <li class="list-group-item">Priority: </li>
+            <li class="list-group-item">Fragile: </li>
+            <li class="list-group-item">To: </li>
+            <li class="list-group-item">Tracking Number: </li>
+            <li class="list-group-item">Missing: </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer></footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
